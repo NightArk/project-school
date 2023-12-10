@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dogs</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        window.onload = function () {
+                    var arrows = document.querySelectorAll('.arrow');
+
+            arrows.forEach(function (arrow) {
+                arrow.addEventListener('click', function () {
+                    var paragraph = this.nextElementSibling;
+                    paragraph.classList.toggle('expanded');
+
+                    // Toggle arrow direction based on expansion
+                    if (paragraph.classList.contains('expanded')) {
+                        this.innerHTML = '&#9650;'; // Upward-pointing triangle
+                    } else {
+                        this.innerHTML = '&#9660;'; // Downward-pointing triangle
+                    }
+                });
+            });
+
+            var firstName = localStorage.getItem('firstName');
+            var lastName = localStorage.getItem('lastName');
+            document.getElementById('greeting').textContent += firstName + ' ' + lastName;
+        }
+    </script>
+</head>
+
+<body>
+
+   <div id="header">
+       
+        <nav>
+            <div id="link-font">
+                <a href="Home.html">Home</a>
+                <a href="Dogs.html">Dogs</a>
+                <a href="birds.html">Birds</a>
+                <a href="cat.html">Cats</a>
+                <a href="makingof.html">Making of Website</a>
+                <a href="our-story.html">Our Story</a>
+            </div>
+              <div id="greeting" class="greeting">
+            Hello,
+        </div>
+        </nav>
+       
+        <div id="title">
+            <h1>Man's best friend</h1>
+            <h3> loyalty, friendship, and companionship with humans</h3>
+            <!-- <p>An online platform to find your new friend!</p> -->
+        </div>
+    </div>
+
+    <div class="main">
+        
+        <div class="breed">
+            <div class="image">
+                <img src="jpg/Labrador.jpg" alt="Labrador Retriever">
+            </div>
+            <div class="info">
+                <h2>Labrador Retrievers</h2>
+                <p><span class="label">Life Expectancy:</span> 10-14 years</p>
+                <p><span class="label">Loyalty:</span> High</p>
+                <p><span class="label">Temperament:</span> Friendly, outgoing</p>
+                <p><span class="label">Size:</span> Medium to large</p>
+                <hr>
+                <div class="arrow">&#9660;</div>
+                
+                <p class="expandable">Labrador Retrievers are known for their friendly and outgoing nature, making them excellent family pets. They are intelligent and trainable, which makes them suitable for various activities such as obedience training, therapy work, and search and rescue missions. Labradors are also known for their love of water and are often seen enjoying a swim. They have a short, dense coat that is easy to maintain and come in three colors: yellow, black, and chocolate.</p>
+            </div>
+        </div>
+
+        
+        <div class="breed">
+            <div class="info">
+                <h2>German Shepherds</h2>
+                <p><span class="label">Life Expectancy:</span> 9-13 years</p>
+                <p><span class="label">Loyalty:</span> Very high</p>
+                <p><span class="label">Temperament:</span> Intelligent, loyal, protective</p>
+                <p><span class="label">Size:</span> Large</p>
+                <hr>
+                <div class="arrow">&#9660;</div>
+                <p class="expandable">German Shepherds are highly versatile and intelligent dogs known for their loyalty, protective nature, and strong work ethic. They are often employed as police or military dogs, search and rescue dogs, and service dogs. They require consistent training and socialization to thrive and can form strong bonds with their families. With their distinctive appearance and confident demeanor, German Shepherds are not only popular working dogs but also beloved companions.</p>
+            </div>
+            <div class="image">
+                <img src="jpg/German.jpg" alt="German Shepherd">
+            </div>
+        </div>
+
+        
+        <div class="breed">
+            <div class="image">
+                <img src="jpg/Doodles.jpg" alt="Golden Doodle">
+            </div>
+            <div class="info">
+                <h2>Golden Doodles</h2>
+                <p><span class="label">Life Expectancy:</span> 10-15 years</p>
+                <p><span class="label">Loyalty:</span> High</p>
+                <p><span class="label">Temperament:</span> Friendly, social</p>
+                <p><span class="label">Size:</span> Varies (depends on the Poodle parent size)</p>
+                <hr>
+                <div class="arrow">&#9660;</div>
+                <p class="expandable">Golden Doodles are a crossbreed between a Golden Retriever and a Poodle. They are known for their friendly and social nature, making them great family pets. Golden Doodles are often hypoallergenic and have a curly or wavy coat that requires regular grooming. They are intelligent and trainable, making them suitable for various activities and roles. With their playful and affectionate demeanor, Golden Doodles are beloved companions.</p>
+            </div>
+        </div>
+
+        
+        <div class="breed">
+            <div class="info">
+                <h2>Pomeranians</h2>
+                <p><span class="label">Life Expectancy:</span> 12-16 years</p>
+                <p><span class="label">Loyalty:</span> Moderate to High</p>
+                <p><span class="label">Temperament:</span> Bold, confident</p>
+                <p><span class="label">Size:</span> Small</p>
+                <hr>
+                <div class="arrow">&#9660;</div>
+                <p class="expandable">Pomeranians are small, lively dogs known for their fluffy double coat and vibrant personality. Despite their small size, Pomeranians are often bold and confident. They make excellent companion animals and can adapt well to various living environments. Pomeranians may require regular grooming to maintain their coat, and their playful nature makes them delightful pets.</p>
+            </div>
+            <div class="image">
+                <img src="jpg/Pomeranian.jpg" alt="Pomeranian">
+            </div>
+        </div>
+
+        
+        <div class="breed">
+            <div class="image">
+                <img src="jpg/bulldog.jpg" alt="Bulldog">
+            </div>
+            <div class="info">
+                <h2>Bulldogs</h2>
+                <p><span class="label">Life Expectancy:</span> 8-10 years</p>
+                <p><span class="label">Loyalty:</span> High</p>
+                <p><span class="label">Temperament:</span> Calm, friendly</p>
+                <p><span class="label">Size:</span> Medium</p>
+                <hr>
+                <div class="arrow">&#9660;</div>
+                <p class="expandable">Bulldogs are known for their distinctive appearance with loose, saggy skin, pushed-in nose, and muscular build. They have a calm and friendly temperament, making them suitable for families and individuals alike. Bulldogs may have a stubborn streak but can be trained with patience and positive reinforcement. They are loyal companions and often form strong bonds with their owners.</p>
+            </div>
+        </div>
+    </div>
+<footer>
+  <div id="social-media">
+    <h4>Follow us on</h4>
+    <a href="https://www.facebook.com/"><img src="facebook_icon.png" alt="Facebook"></a>
+    <a href="https://www.instagram.com/"><img src="insta_icon.png" alt="Instagram"></a>
+    <a href="https://www.twitter.com/"><img src="twitter1.png" alt="Twitter"></a>
+  </div>
+
+  <div id="contact">
+    <h4>Contact us</h4>
+    <div>
+      <img src="carbon_location.png" alt="Location">
+      <a href="https://www.polytechnic.bh/">Polytechnic</a>
+    </div>
+    <div>
+      <img src="carbon_phone-voice.png" alt="Phone">
+      <a href="tel:+97333151099">33151099</a>
+    </div>
+    <div>
+      <img src="clarity_email-line.png" alt="Email">
+      <a href="mailto:info@animals.com">info@animals.com</a>
+    </div>
+  </div>
+
+  <div id="aboutWebsite">
+    <h1>Your Website Title</h1>
+    <p>Some short text about your website.</p>
+  </div>
+
+  <div id="copyright">
+    <p>&copy; 2022 Your Website Name. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+
+</html>
