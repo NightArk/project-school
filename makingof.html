@@ -1,90 +1,104 @@
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="makingoff.css">
-    <script>
-        window.onload = function () {
-            var firstName = localStorage.getItem('firstName');
-            var lastName = localStorage.getItem('lastName');
-            document.getElementById('greeting').textContent += firstName + ' ' + lastName;
-        } 
-    </script>
+    <title>Making of website</title>
+    <link rel="icon" href="jpg/logo.png">
+    <link rel="stylesheet" type="text/css" href="homestyles.css">
+    <script src="ScriptForWebsite.js"></script>
 </head>
 
 <body>
     <div id="header">
-        <div id="greeting" class="greeting">
-            Hello,
-        </div>
+
         <nav>
             <div id="link-font">
                 <a href="Home.html">Home</a>
-                <a href="#sub-topic1">Sub-Topic 1</a>
-                <a href="#sub-topic2">Sub-Topic 2</a>
-                <a href="#sub-topic3">Sub-Topic 3</a>
+                <a href="Dogs.html">Dogs</a>
+                <a href="birds.html">Birds</a>
+                <a href="cat.html">Cats</a>
                 <a href="makingof.html">Making of Website</a>
-                <a href="#our-story">Our Story</a>
+                <a href="our-story.html">Our Story</a>
+            </div>
+            <div id="greeting" class="greeting">
+                Hello,
             </div>
         </nav>
+    </div>
 
-        <div id="title">
-            <h1>Animal Rescue Shelter</h1>
-            <h3>Welcome to our Animal Adoption Centre Webpage</h3>
-            <!-- <p>An online platform to find your new friend!</p> -->
+
+    <!--Accordion aka collapse please dont change any IDs lists or divs-->
+    <ul class="acc">
+        <li>
+            <input type="radio" name="acc" id="first">
+            <label id="la-making-of" for="first">Header and footer</label>
+            <div class="content">
+                <p>Ensuring a seamless and intuitive user experience, we've opted to anchor both the header and footer
+                    across all pages. This deliberate choice aligns with our goal of providing a familiar and structured
+                    layout, enhancing user interaction and meeting expectations.</p>
+
+            </div>
+        </li>
+
+        <!--add a paragraph for home to describe your home page-->
+        <li>
+            <input type="radio" name="acc" id="second">
+            <label id="la-making-of" for="second">Home Page</label>
+            <div class="content">
+
+            </div>
+        </li>
+
+        <li>
+            <input type="radio" name="acc" id="third">
+            <label id="la-making-of" for="third">Sub topics body</label>
+            <div class="content">
+                <p>Within each subtopic, our layout focuses on showcasing three distinct breeds of the animal type. Each
+                    breed is enclosed within a bordered area, providing essential information and a visual
+                    representation for easy identification and comparison.</p>
+            </div>
+        </li>
+
+        <!--Other content for extra information you can add a paragraph below in p-->
+        <li>
+            <input type="radio" name="acc" id="fourth">
+            <label id="la-making-of" for="fourth">Other</label>
+            <div class="content">
+                <p></p>
+            </div>
+        </li>
+    </ul>
+
+    <!--for mohd add your mockup you can fit 3 or 4 pics if u want up to u -->
+    <div class="pics">
+        <img src="Mockup/bodyofsub.png" width="35%">
+        <div class="sec">
+            <img src="Mockup/subtopics.png" width="25%">
         </div>
     </div>
-    <div class="para">
-        <p>To bear to bear, than fled o'er a weary from whose bodkin? Who would by oppresolence of dels be:
-            the of greams morthy to suffled of the name wish'd. To die: that to beary life, the us make whose ills wrong
-            end by
-            opprespect the with the patience of dels wrong, there's wrong a we end make consummation. To die, or to
-            suffer with the name
-            with the arrows of that we haveller bear to bear to sleep of action: whose bodkin? Who would fardels wrong
-            afterpriz'd come with may cowards
-            of so lose bodkin? Who wo</p>
-        <p>
-            Tor zu warten lacht er, einen Anblich seiner zum Eintritt beiseines dem Türhüter und frage und sagt um
-            Eintritt in Mann vom Lande nichtiger also später nich
-            jetzt ein nich nich", schwart, schlieber zugänglich den Saal steht, einere zu Saal ich das Gesetz steht
-            eintritten dürfenstehn seite Türhüter Tage untersteht,
-            langenauer in Mann, bis zu wartet;
-            das Gesetz so später als den hat der als er werde es der zu Saal icht er Tage und sagt: "Wenn vom Lande nich
-            den Eintritt nieder sagt, bückt, lacht er al
-        </p>
-        <p>
-            To becognize to und that efficies, systems, ands of pers of pership and markedly. Human recognize time, and
-            important and needs, and quality, competitors ared market.
-            As that work, competence systems, and foundament and competitors of quality have companies, and engage,
-            competencies: People and custome recognize that
-            world-classume a few meaning opers of perstant of eve recognize the importand improving humand needs,
-            and it we with the future. World-class comerson a share desting opers' nears optima
-        </p>
-    </div>
 
-
-
-    <footer>
-        <div id="social-media">
+    <footer id="making-of">
+        <div id="fsocial-media">
             <h4>Follow us on</h4>
-            <a href="https://www.facebook.com/"><img src="facebook_icon.png" alt="facebook"></a>
-            <a href="https://www.instagram.com/"><img src="insta_icon.png" alt="instagram"></a>
-            <a href="https://www.twitter.com/"><img src="twitter1.png" alt="twitter"></a>
+            <a href="https://www.facebook.com/"><img src="jpg/facebook_icon.png" alt="facebook"></a>
+            <a href="https://www.instagram.com/"><img src="jpg/insta_icon.png" alt="instagram"></a>
+            <a href="https://www.twitter.com/"><img src="jpg/twitter1.png" alt="twitter"></a>
         </div>
 
-        <div id="contact">
+        <div id="fcontact">
             <h4>Contact us</h4>
-            <img src="carbon_location.png" alt="carbon_location"> <a href="https://www.polytechnic.bh/">Polytechnic</a>
-            <img src="carbon_phone-voice.png" alt="carbon_phone-voice"> <a href="tel:+97333151099">33151099</a>
-            <img src="clarity_email-line.png" alt="clarity_email-line"> <a
+            <img src="jpg/carbon_location.png" alt="carbon_location"> <a
+                href="https://www.polytechnic.bh/">Polytechnic</a>
+            <img src="jpg/carbon_phone-voice.png" alt="carbon_phone-voice"> <a href="tel:+97333151099">33151099</a>
+            <img src="jpg/clarity_email-line.png" alt="clarity_email-line"> <a
                 href="mailto:info@animals.com">info@animals.com</a>
         </div>
 
-        <div id="aboutWebsite">
+        <div id="faboutWebsite">
             <h1>Your Website Title</h1>
             <p>Some short text about your website.</p>
         </div>
 
-        <div id="copyright">
+        <div id="fcopyright">
             <p>&copy; 2022 Your Website Name. All rights reserved.</p>
         </div>
     </footer>

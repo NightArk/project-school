@@ -2,16 +2,21 @@
 <html>
 
 <head>
+    
+    
+    
     <title>Animal Centre</title>
     <link rel="stylesheet" href="homestyles.css">
-    
+    <script src="ScriptForWebsite.js"></script>
+    <link rel="icon" href="jpg/logo.png">
+
 </head>
 
 
 <body>
 
-    <div id="header">
-       
+    <div id="Home-header">
+
         <nav>
             <div id="link-font">
                 <a href="Home.html">Home</a>
@@ -21,15 +26,14 @@
                 <a href="makingof.html">Making of Website</a>
                 <a href="our-story.html">Our Story</a>
             </div>
-              <div id="greeting" class="greeting">
-            Hello,
-        </div>
+            <div id="greeting" class="greeting">
+                Hello,
+            </div>
         </nav>
-       
+
         <div id="title">
             <h1>Animal Rescue Shelter</h1>
             <h3>Welcome to our Animal Adoption Centre Webpage</h3>
-            <!-- <p>An online platform to find your new friend!</p> -->
         </div>
     </div>
 
@@ -52,42 +56,21 @@
             allowfullscreen></iframe>
     </div>
 
-
-    <!-- <section id="animals">
-        <h2>Animals Available for Adoption</h2>
-        <div class="animal">
-            <img src="Dog_pic.jpg" alt="Dog">
-            <h3>Max</h3>
-            <p>Age: 2 years</p>
-            <p>Max is a friendly and playful dog looking for a loving home.</p>
-        </div>
-        <div class="animal">
-            <img src="Cat_pic.jpg" alt="Cat">
-            <h3>Bella</h3>
-            <p>Age: 1 year</p>
-            <p>Bella is a quiet and affectionate cat who loves to cuddle.</p>
-        </div>
-    </section> -->
-
-
-
-
-
     <div class="form">
         <form id="registrationForm">
             <div class="reg">
                 <h1>Register</h1>
                 <section>
-                    <label for="firstName">First Name:</label>
+                    <label id="formstuff" for="firstName">First Name:</label>
                     <input type="text" id="firstName" name="firstName" required minlength="3">
 
-                    <label for="lastName">Last Name:</label>
+                    <label id="formstuff" for="lastName">Last Name:</label>
                     <input type="text" id="lastName" name="lastName" required minlength="3">
 
-                    <label for="mobileNo">Mobile No:</label>
+                    <label id="formstuff" for="mobileNo">Mobile No:</label>
                     <input type="tel" id="mobileNo" name="mobileNo" pattern="[0-9]{8}" required>
 
-                    <label for="email">E-mail:</label>
+                    <label id="formstuff" for="email">E-mail:</label>
                     <input type="email" id="email" name="email" required>
 
                     <button type="button" onclick="submitForm()">Register</button>
@@ -110,16 +93,16 @@
     <footer>
         <div id="social-media">
             <h4>Follow us on</h4>
-            <a href="https://www.facebook.com/"><img src="facebook_icon.png" alt="facebook"></a>
-            <a href="https://www.instagram.com/"><img src="insta_icon.png" alt="instagram"></a>
-            <a href="https://www.twitter.com/"><img src="twitter1.png" alt="twitter"></a>
+            <a href="https://www.facebook.com/"><img src="jpg/facebook_icon.png" alt="facebook"></a>
+            <a href="https://www.instagram.com/"><img src="jpg/insta_icon.png" alt="instagram"></a>
+            <a href="https://www.twitter.com/"><img src="jpg/twitter1.png" alt="twitter"></a>
         </div>
 
         <div id="contact">
             <h4>Contact us</h4>
-            <img src="carbon_location.png" alt="carbon_location"> <a href="https://www.polytechnic.bh/">Polytechnic</a>
-            <img src="carbon_phone-voice.png" alt="carbon_phone-voice"> <a href="tel:+97333151099">33151099</a>
-            <img src="clarity_email-line.png" alt="clarity_email-line"> <a
+            <img src="jpg/carbon_location.png" alt="carbon_location"> <a href="https://www.polytechnic.bh/">Polytechnic</a>
+            <img src="jpg/carbon_phone-voice.png" alt="carbon_phone-voice"> <a href="tel:+97333151099">33151099</a>
+            <img src="jpg/clarity_email-line.png" alt="clarity_email-line"> <a
                 href="mailto:info@animals.com">info@animals.com</a>
         </div>
 
@@ -135,43 +118,4 @@
 
 </body>
 
-
-<script>
-
-    window.onload = function () {
-        var firstName = localStorage.getItem('firstName');
-        var lastName = localStorage.getItem('lastName');
-        document.getElementById('greeting').textContent += firstName + ' ' + lastName;
-    }
-    function submitForm() {
-        var form = document.getElementById("registrationForm");
-        if (form.checkValidity()) {
-            // Form is valid, show confirmation message
-            document.getElementById("confirmationMessage").style.display = "block";
-            document.getElementById("errorMessage").style.display = "none";
-            var firstName = form.elements["firstName"].value;
-            var lastName = form.elements["lastName"].value;
-            localStorage.setItem('firstName', firstName);
-            localStorage.setItem('lastName', lastName);
-        } else {
-            // Form is invalid, show error message
-            document.getElementById("confirmationMessage").style.display = "none";
-            document.getElementById("errorMessage").style.display = "block";
-        }
-
-    }
-</script>
-
 </html>
-
-<!-- <div class="picture">
-    <img style="width: 14%;" src="jpg/homepic.jpg">
-</div>
-
-
-<div class="paragraph">
-    <p>Animal rescue centre has been built in January 1st of 2018 to give missing, injured or neglected animals a
-        new home. Our team split into two groups, where the first team are on the look out for stray animals to
-        bring them home. While the other team are working in the centre to ensure every animal is getting fed with
-        proper healthcare from our proffesional vets </p>
-</div> -->
