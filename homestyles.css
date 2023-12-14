@@ -230,6 +230,14 @@ button:hover {
     background-repeat: no-repeat;
 }
 
+#background-birds {
+    background-image: url('jpg/background-bird.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 55%;
+    background-repeat: no-repeat;
+}
+
 /* css for sub-topic pages */
 #sub-topic-title {
     color: #000000;
