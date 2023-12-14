@@ -4,103 +4,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script>
-        document.querySelector('.arrow').addEventListener('click', function () {
-            var content = this.parentNode.nextElementSibling;
-            if (content.style.maxHeight) {
-                // If the card is expanded, collapse it
-                content.style.maxHeight = null;
-                this.classList.remove('reverse');
-            } else {
-                // If the card is collapsed, expand it
-                content.style.maxHeight = content.scrollHeight + 'px';
-                this.classList.add('reverse');
-            }
-        });
-    </script>
-    <style>
-        /* .card {
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            margin: 10px;
-            padding: 10px;
-            width: 300px;
-        }
-        .card h2 {
-            margin-top: 0;
-        }
-        .card p {
-            margin-bottom: 0;
-        }
-        .card .toggle-button {
-            background-color: #eee;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 10px;
-            padding: 5px 10px;
-        }
-        .card .toggle-button:hover {
-            background-color: #e0e0e0;
-        }
-        .card .content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.2s ease-out;
-        } */
-        .card {
-            width: 300px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            margin: 10px;
-            overflow: hidden;
-        }
-
-        .card-header {
-            padding: 10px;
-            background-color: #f5f5f5;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .card-content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.2s ease-out;
-        }
-
-        .arrow {
-            width: 0;
-            height: 0;
-            border-left: 10px solid transparent;
-            border-right: 10px solid transparent;
-            border-top: 10px solid black;
-            transition: transform 0.3s;
-        }
-
-        .arrow.reverse {
-            transform: rotate(180deg);
-        }
-    </style>
+    <link rel="icon" href="jpg/logo.png">
+    <title>Cats</title>
+    <link rel="stylesheet" href="homestyles.css">
+    <script src="ScriptForWebsite.js"></script>
 </head>
 
 <body>
+    <div id="background-cats">
+        <div id="header">
 
-    <div class="card">
-        <div class="card-header">
-            <h2>German Shepherds</h2>
-            <div class="arrow"></div>
+            <nav>
+                <div id="link-font">
+                    <a href="Home.html">Home</a>
+                    <a href="Dogs.html">Dogs</a>
+                    <a href="birds.html">Birds</a>
+                    <a href="cat.html">Cats</a>
+                    <a href="makingof.html">Making of Website</a>
+                    <a href="our-story.html">Our Story</a>
+                </div>
+                <div id="greeting" class="greeting">
+                    Hello,
+                </div>
+            </nav>
+
+            <div id="sub-topic-title">
+                <h1 id="dogs-title">FurFriends</h1>
+                <h3>Unleashing the Charm of the world's most popular pet</h3>
+            </div>
         </div>
-        <div class="card-content">
-            <p>German Shepherds are a breed of medium to large-sized working dog that originated in Germany. In the
-                English language, the breed's officially recognized name is German Shepherd Dog. The breed was
-                officially known as the Alsatian in Britain until 1977 when its name was changed back to German
-                Shepherd.</p>
+
+        <div class="main">
+
+            <div class="breed">
+                <div class="image">
+                    <img src="jpg/Siamese-cat.jpg" alt="Labrador Retriever">
+                </div>
+                <div class="info">
+                    <h2 id="card">Siamese</h2>
+                    <p id="sub-topic"><span class="label-sub-topic">Life Expectancy:</span> 15-20 years</p>
+                    <p id="sub-topic"><span class="label-sub-topic">Temperament:</span> Highly social, Extroverted, Outgoing</p>
+                    <p id="sub-topic"><span class="label-sub-topic">Size:</span> Medium </p>
+                    <hr>
+                    <div class="arrow">&#9660;</div>
+
+                    <p class="expandable">Siamese cats show immense loyalty and, like dogs, form strong bonds with humans.
+                         As their owner, you might find them constantly following you around and demanding your attention.
+                          Siamese cats are notoriously vocal and noisy.
+                           Due to their loud, low-pitched voice, they're often fondly called "meezers".</p>
+                </div>
+            </div>
+
+
+            <div class="breed">
+                <div class="info">
+                    <h2 id="card">British Shorthair</h2>
+                    <p id="sub-topic"><span class="label-sub-topic">Life Expectancy:</span> 14-20 years</p>
+                    <p id="sub-topic"><span class="label-sub-topic">Temperament:</span> Easygoing, Quiet, Intelligent</p>
+                    <p id="sub-topic"><span class="label-sub-topic">Size:</span> Medium</p>
+                    <hr>
+                    <div class="arrow">&#9660;</div>
+                    <p class="expandable">The British Shorthair is the pedigreed version of the traditional British domestic cat, with a distinctively stocky body, thick coat, and broad face.
+                    The most familiar colour variant is the "British Blue", with a solid grey-blue coat, pineapple eyes, and a medium-sized tail.
+                    The breed has also been developed in a wide range of other colours and patterns, including tabby and colourpoint.
+                    </p>
+                </div>
+                <div class="image">
+                    <img src="jpg/BritishSH-cat.jpg" alt="German Shepherd">
+                </div>
+            </div>
+
+
+            <div class="breed">
+                <div class="image">
+                    <img src="jpg/Siberian-cat.jpeg" alt="Golden Doodle">
+                </div>
+                <div class="info">
+                    <h2 id="card">Siberian</h2>
+                    <p id="sub-topic"><span class="label-sub-topic">Life Expectancy:</span> 11-15 years</p>
+                    <p id="sub-topic"><span class="label-sub-topic">Temperament:</span> Playful, Loyal</p>
+                    <p id="sub-topic"><span class="label-sub-topic">Size:</span> Medium to large</p>
+                    <hr>
+                    <div class="arrow">&#9660;</div>
+                    <p class="expandable">The Siberian is a centuries-old landrace (natural variety) of domestic cat in Russia.
+                    recently developed as a formal breed with standards promulgated the world over since the late-1980s.
+                    Since 2006, the breed is recognised for registry and championship status with all major cat registries.
+                    The formal name of the breed is Siberian Forest Cat, but it is typically referred to as the Siberian or Siberian cat.
+                    Formerly, sometimes the names Moscow Semi-Longhair and Russian Longhair were also used.</p>
+                </div>
+            </div>
+
+
+            <div class="breed">
+                <div class="info">
+                    <h2 id="card">Singapura</h2>
+                    <p id="sub-topic"><span class="label-sub-topic">Life Expectancy:</span> 11-15 years</p>
+                    <p id="sub-topic"><span class="label-sub-topic">Temperament:</span> Active, Playful</p>
+                    <p id="sub-topic"><span class="label-sub-topic">Size:</span> tiny</p>
+                    <hr>
+                    <div class="arrow">&#9660;</div>
+                    <p class="expandable">The Singapura is the smallest breed of cat, noted for its large eyes and ears, ticked coat, and blunt tail.
+                        Reportedly established from three "drain cats" imported from Singapore in the 1970s,
+                        it was later revealed that the cats were originally sent to Singapore from the United States before being exported back to the US.</p>
+                </div>
+                <div class="image">
+                    <img src="jpg/Singapura-cat.jpg" alt="Pomeranian">
+                </div>
+            </div>
+
+
+            <div class="breed">
+                <div class="image">
+                    <img src="jpg/Persian-cat.jpg" alt="Bulldog">
+                </div>
+                <div class="info">
+                    <h2 id="card">Persian</h2>
+                    <p id="sub-topic"><span class="label-sub-topic">Life Expectancy:</span> 12-17 years</p>
+                    <p id="sub-topic"><span class="label-sub-topic">Temperament:</span> Gentle, Friendly</p>
+                    <p id="sub-topic"><span class="label-sub-topic">Size:</span> Medium</p>
+                    <hr>
+                    <div class="arrow">&#9660;</div>
+                    <p class="expandable">The Persian cat, also known as the Persian longhair, is a long-haired breed of cat characterised by a round face and short muzzle.
+                        The first documented ancestors of Persian cats might have been imported into Italy from Khorasan as early as around 1620, however, this has not been proven.
+                        Instead, there is stronger evidence for a longhaired cat breed being exported from Afghanistan and Iran from the 19th century onwards.</p>
+                </div>
+            </div>
         </div>
+        <footer>
+            <div id="social-media">
+                <h4>Follow us on</h4>
+                <a href="https://www.facebook.com/"><img src="jpg/facebook_icon.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/"><img src="jpg/insta_icon.png" alt="Instagram"></a>
+                <a href="https://www.twitter.com/"><img src="jpg/twitter1.png" alt="Twitter"></a>
+            </div>
+
+            <div id="contact">
+                <h4>Contact us</h4>
+                <div>
+                    <img src="jpg/carbon_location.png" alt="Location">
+                    <a href="https://www.polytechnic.bh/">Polytechnic</a>
+                </div>
+                <div>
+                    <img src="jpg/carbon_phone-voice.png" alt="Phone">
+                    <a href="tel:+97333151099">33151099</a>
+                </div>
+                <div>
+                    <img src="jpg/clarity_email-line.png" alt="Email">
+                    <a href="mailto:info@animals.com">info@animals.com</a>
+                </div>
+            </div>
+
+            <div id="aboutWebsite">
+                <h1>WildWhiskers</h1>
+            <p>Your Ultimate Guide to Pets and Wildlife.</p>
+            </div>
+
+            <div id="copyright">
+                <p>&copy; 2022 Your Website Name. All rights reserved.</p>
+            </div>
+        </footer>
     </div>
-
 </body>
 
 </html>

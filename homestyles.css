@@ -212,6 +212,14 @@ button:hover {
 
 /*Here spacing is done for the sub-topic pages*/
 
+#background-cats{
+    background-image: url('jpg/background-cat1.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
 
 /* css for sub-topic pages */
 #background-dogs {
